@@ -1,0 +1,73 @@
+[info] [2026-06-09T06:06:35.059Z] : i Command ZET push not applicable for the selected service as it is not mapped to ZET online model.
+[info] [2026-06-09T06:07:36.731Z] : 
+[info] [2026-06-09T06:07:36.741Z] : Click this URL to login to your Zoho Account
+[info] [2026-06-09T06:07:36.742Z] : https://accounts.zoho.com/oauth/v2/auth?client_id=1000.gnjph6g96nf23jd4u14tba2egykhik&scope=ZAPPS.apps.ALL%20AaaServer.profile.READ%20ZMProcessors.connectors.CREATE&response_type=code&access_type=offline&prompt=consent&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] [2026-06-09T06:07:36.744Z] : Note: To login to CN DC, update the above URL from accounts.zoho.com to accounts.zoho.com.cn
+[info] [2026-06-09T06:07:36.746Z] : 
+[debug] [2026-06-09T06:07:46.546Z] : DCType Of the user is us
+[debug] [2026-06-09T06:07:46.551Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request query omitted>
+
+[debug] [2026-06-09T06:07:47.274Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:07:45 GMT","content-type":"application/json;charset=UTF-8","content-length":"337","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=eec3a75d333f4bdde33eea5371b7c1c4; Path=/; Secure; HttpOnly","iamcsr=10336ebe-bbc6-4cd1-b60d-cc4f34233b12;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-06-09T06:07:47.288Z] : >>>> HTTP REQUEST : GET https://accounts.zoho.com/oauth/user/info 
+
+[debug] [2026-06-09T06:07:47.496Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:07:46 GMT","content-type":"application/json;charset=UTF-8","content-length":"139","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=2ee776399749be0d92a8320fb3a08dbc; Path=/; Secure; HttpOnly","iamcsr=96891cb7-ac45-4448-94ed-02d30c209c6b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-06-09T06:08:10.397Z] : app_info.json File does not exist.
+[info] [2026-06-09T06:08:10.410Z] : i Waiting for response from Sigma....
+
+[debug] [2026-06-09T06:08:10.420Z] : > refreshing access token <
+[debug] [2026-06-09T06:08:10.423Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request query omitted>
+
+[debug] [2026-06-09T06:08:11.159Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:08:09 GMT","content-type":"application/json;charset=UTF-8","content-length":"248","connection":"keep-alive","set-cookie":["zalb_b266a5bf57=ca9803f56b086bd11d10c7e23195c2c1; Path=/; Secure; HttpOnly","iamcsr=499c3f6a-b7b3-42b4-915d-7878aaf91107;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-frame-options":"SAMEORIGIN","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-06-09T06:08:11.190Z] : >>>> HTTP REQUEST : GET https://sigma.zoho.com/workspace/restapi/workspace 
+Query params: {"workspace_type":1}
+
+[debug] [2026-06-09T06:08:11.846Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:08:10 GMT","content-type":"application/json;charset=UTF-8","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_4ae9145f4f=fb896e1559e0f0209688b6294e01a46a; Path=/; Secure; HttpOnly","zact=5a9a2c43-de62-4b66-a67e-722a54efdfb8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[error] [2026-06-09T06:08:11.849Z] : × Create a Workspace in Sigma by logging in to sigma.zoho.com.
+[debug] [2026-06-09T06:08:11.852Z] : Error: No Workspace found in Sigma.
+[debug] [2026-06-09T06:11:37.987Z] : app_info.json File does not exist.
+[info] [2026-06-09T06:11:38.001Z] : i Waiting for response from Sigma....
+
+[debug] [2026-06-09T06:11:38.011Z] : >>>> HTTP REQUEST : GET https://sigma.zoho.com/workspace/restapi/workspace 
+Query params: {"workspace_type":1}
+
+[debug] [2026-06-09T06:11:38.776Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:11:37 GMT","content-type":"application/json;charset=UTF-8","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_4ae9145f4f=fb896e1559e0f0209688b6294e01a46a; Path=/; Secure; HttpOnly","zact=ff9106f5-223a-49e8-bbcd-45159ee9c754;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-06-09T06:11:38.816Z] : √ Since you only have one Workspace, 'chan_workspace', it has been set as the default Workspace.
+[info] [2026-06-09T06:11:51.488Z] : i Waiting for response from Sigma....
+
+[debug] [2026-06-09T06:11:51.494Z] : >>>> HTTP REQUEST : GET https://sigma.zoho.com/workspace/restapi/chan_workspace/apps 
+Query params: {"filter":"{\"service\":[6]}","index":0,"range":100}
+
+[debug] [2026-06-09T06:11:52.187Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:11:50 GMT","content-type":"application/json;charset=UTF-8","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_4ae9145f4f=8bde77f88ab0382d843107e83c573540; Path=/; Secure; HttpOnly","zact=fc9e721d-f76e-45f6-bca8-c94189600730;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-06-09T06:58:09.612Z] : app_info.json File does not exist.
+[info] [2026-06-09T06:58:13.943Z] : i Waiting for response from Sigma....
+
+[debug] [2026-06-09T06:58:13.953Z] : >>>> HTTP REQUEST : GET https://sigma.zoho.com/workspace/restapi/chan_workspace/apps 
+Query params: {"filter":"{\"service\":[6]}","index":0,"range":100}
+
+[debug] [2026-06-09T06:58:14.716Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:58:13 GMT","content-type":"application/json;charset=UTF-8","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_4ae9145f4f=8bde77f88ab0382d843107e83c573540; Path=/; Secure; HttpOnly","zact=200f8047-4518-4a8b-be2e-771c8e99d54e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2026-06-09T06:58:24.651Z] : app_info.json File does not exist.
+[info] [2026-06-09T06:58:26.752Z] : i Waiting for response from Sigma....
+
+[debug] [2026-06-09T06:58:26.761Z] : >>>> HTTP REQUEST : GET https://sigma.zoho.com/workspace/restapi/chan_workspace/apps 
+Query params: {"filter":"{\"service\":[6]}","index":0,"range":100}
+
+[debug] [2026-06-09T06:58:27.452Z] : <<<< HTTP RESPONSE : 200
+Response Headers{"server":"ZGS","date":"Tue, 09 Jun 2026 06:58:26 GMT","content-type":"application/json;charset=UTF-8","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_4ae9145f4f=8bde77f88ab0382d843107e83c573540; Path=/; Secure; HttpOnly","zact=f9662123-553d-404c-a1c4-2af77e998cd1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2026-06-09T06:58:32.902Z] : i Command ZET push not applicable for the selected service as it is not mapped to ZET online model.

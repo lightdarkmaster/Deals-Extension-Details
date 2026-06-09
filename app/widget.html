@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://live.zwidgets.com/js-sdk/1.4/ZohoEmbededAppSDK.min.js"></script>
+</head>
+
+<body>
+
+    <div class="widget-root">
+
+        <!-- ── HEADER ── -->
+        <header class="wg-header">
+            <div class="wg-header-left">
+                <div class="dashboard-icon">
+                    <!-- <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+                </svg> -->
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+                    <!-- License: PD. Made by paomedia: https://github.com/paomedia/small-n-flat -->
+                    <svg width="800px" height="800px" viewBox="0 0 24 24"
+                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg"
+                        version="1.1" xmlns:cc="http://creativecommons.org/ns#"
+                        xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <g transform="translate(0 -1028.4)">
+                            <path
+                                d="m11.982 1033.4c-3.0712 0-6.157 1.1-8.5001 3.5-3.3821 3.3-4.2808 8.2-2.7813 12.5h22.562c1.5-4.3 0.601-9.2-2.781-12.5-2.343-2.4-5.429-3.5-8.5-3.5z"
+                                fill="#2c3e50" />
+                            <path
+                                d="m12 1032.4c-3.0711 0-6.1569 1.1-8.5 3.5-3.3821 3.3-4.2808 8.2-2.7812 12.5h22.562c1.5-4.3 0.601-9.2-2.781-12.5-2.343-2.4-5.429-3.5-8.5-3.5z"
+                                fill="#34495e" />
+                            <path d="m13 11.864a1 0.86412 0 1 1 -2 0 1 0.86412 0 1 1 2 0z"
+                                transform="matrix(1.4142 1.4142 -1.6366 1.6366 14.446 1009)" fill="#2c3e50" />
+                            <path transform="matrix(.094524 .094524 -.60031 .60031 22.211 1031.9)" fill="#c0392b"
+                                d="m12 5.9419 7.481 12.957h-14.962z" />
+                            <path style="block-progression:tb;text-indent:0;color:#000000;text-transform:none"
+                                d="m19.759 1037.6a0.19843 1.2602 45 0 0 -0.044 0 0.19843 1.2602 45 0 0 -0.509 0.3l-7.999 6.7h0.067l-2.1217 2.1c-0.3906 0.4-0.3906 1.1 0 1.5 0.3905 0.4 1.0237 0.4 1.4137 0l2.122-2.2 0.088 0.1 6.674-8a0.19843 1.2602 45 0 0 0.331 -0.5 0.19843 1.2602 45 0 0 -0.022 0z"
+                                fill="#2c3e50" />
+                            <path style="block-progression:tb;text-indent:0;color:#000000;text-transform:none"
+                                d="m19.778 1036.6a0.19843 1.2602 45 0 0 -0.044 0 0.19843 1.2602 45 0 0 -0.508 0.3l-7.999 6.7 0.066 0.1-2.1214 2.1c-0.3906 0.4-0.3906 1 0 1.4 0.3905 0.4 1.0234 0.4 1.4144 0l2.121-2.1 0.088 0.1 6.674-8a0.19843 1.2602 45 0 0 0.331 -0.6 0.19843 1.2602 45 0 0 -0.022 0z"
+                                fill="#f1c40f" />
+                            <path d="m13 11.864a1 0.86412 0 1 1 -2 0 1 0.86412 0 1 1 2 0z"
+                                transform="matrix(1.4142 1.4142 -1.6366 1.6366 14.446 1008)" fill="#f39c12" />
+                            <path d="m13 12a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z"
+                                transform="matrix(.70711 .70711 -.70711 .70711 12 1027.4)" fill="#2c3e50" />
+                            <path
+                                d="m12 1032.4c-3.0711 0-6.1569 1.1-8.5 3.5-2.5366 2.5-3.6901 5.9-3.4688 9.2 0.044563-3 1.1842-6 3.4688-8.2 2.3431-2.4 5.4289-3.5 8.5-3.5 3.071 0 6.157 1.1 8.5 3.5 2.285 2.2 3.424 5.2 3.469 8.2 0.221-3.3-0.932-6.7-3.469-9.2-2.343-2.4-5.429-3.5-8.5-3.5z"
+                                fill="#2c3e50" />
+                            <path
+                                d="m12 1034.4h-0.5v2h0.5 0.5v-2h-0.5zm-4.7812 1.1c-0.3039 0.2-0.5968 0.4-0.875 0.5l1 1.8c0.2799-0.2 0.5749-0.4 0.875-0.5l-1-1.8zm9.5622 0-1 1.8c0.3 0.1 0.595 0.3 0.875 0.5l1-1.8c-0.278-0.1-0.571-0.3-0.875-0.5zm-13.594 3.7c-0.1776 0.3-0.3144 0.6-0.4687 0.9l1.7187 1c0.1536-0.3 0.3092-0.6 0.5-0.9l-1.75-1zm17.624 0-1.75 1c0.191 0.3 0.347 0.6 0.5 0.9l1.75-1c-0.158-0.3-0.312-0.6-0.5-0.9zm-19.281 5.2c-0.012 0.1-0.0313 0.3-0.0313 0.5 0 0.1 0.0186 0.3 0.0313 0.5h2c-0.0081-0.2-0.0313-0.3-0.0313-0.5-0.0002 0 0 0 0 0 0.0013-0.2 0.0195-0.4 0.0313-0.5h-2zm18.938 0c0.01 0.1 0.031 0.3 0.031 0.5 0 0.1-0.021 0.3-0.031 0.5h2c0.011-0.2 0.027-0.3 0.031-0.5 0-0.2-0.017-0.4-0.031-0.5h-2z"
+                                fill="#7f8c8d" />
+                            <path
+                                d="m12 1034.4h-0.5v2h0.5 0.5v-2h-0.5zm-10.469 10c-0.012 0.1-0.0313 0.3-0.0313 0.5 0 0.1 0.0186 0.3 0.0313 0.5h2c-0.0081-0.2-0.0313-0.3-0.0313-0.5-0.0002 0 0 0 0 0 0.0013-0.2 0.0195-0.4 0.0313-0.5h-2zm18.938 0c0.01 0.1 0.031 0.3 0.031 0.5 0 0.1-0.021 0.3-0.031 0.5h2c0.011-0.2 0.027-0.3 0.031-0.5 0-0.2-0.017-0.4-0.031-0.5h-2z"
+                                fill="#ecf0f1" />
+                        </g>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="wg-title">Deals Dashboard</h1>
+                    <p class="wg-sub">Pipeline · Revenue · Performance</p>
+                </div>
+            </div>
+            <div class="wg-header-right">
+                <span class="wg-badge" id="wg-total-badge">— deals</span>
+                <span class="wg-timestamp" id="wg-updated">—</span>
+            </div>
+        </header>
+
+        <!-- ── LOADING ── -->
+        <div id="loadingDiv" class="state-loading">
+            <div class="spinner-ring"></div>
+            <p>Fetching deals data…</p>
+        </div>
+
+        <!-- ── ERROR ── -->
+        <div id="errorDiv" class="state-error" style="display:none;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            <p id="errorMessage">Unable to load deals data.</p>
+        </div>
+
+        <!-- ── MAIN CONTENT ── -->
+        <main id="contentDiv" style="display:none;">
+
+            <!-- KPI STRIP -->
+            <section class="kpi-strip" id="kpiStrip"></section>
+
+            <!-- ROW 1: Pipeline funnel + Stage donut -->
+            <div class="grid-row grid-row--halves">
+
+                <!-- Pipeline Funnel -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="panel-title">Pipeline by Stage</span>
+                        <span class="panel-hint">value · count</span>
+                    </div>
+                    <div class="funnel-wrap" id="funnelWrap"></div>
+                </div>
+
+                <!-- Stage Donut -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="panel-title">Stage Distribution</span>
+                        <span class="panel-hint">by deal count</span>
+                    </div>
+                    <div class="donut-layout">
+                        <div class="donut-wrap">
+                            <svg id="donutSvg" viewBox="0 0 200 200" role="img">
+                                <!-- <title>Stage distribution donut chart</title> -->
+                            </svg>
+                            <div class="donut-center">
+                                <span class="donut-num" id="donutNum">0</span>
+                                <span class="donut-lbl">deals</span>
+                            </div>
+                        </div>
+                        <div class="donut-legend" id="donutLegend"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ROW 2: Monthly revenue bar chart -->
+            <div class="panel panel--full">
+                <div class="panel-header">
+                    <span class="panel-title">Monthly Closing Revenue</span>
+                    <span class="panel-hint">closed-won · by close date</span>
+                </div>
+                <div class="bar-chart-wrap" id="barChartWrap">
+                    <canvas id="barCanvas"></canvas>
+                    <div class="bar-y-axis" id="barYAxis"></div>
+                    <div class="bar-x-axis" id="barXAxis"></div>
+                </div>
+            </div>
+
+            <!-- ROW 3: Win/Loss + Type breakdown -->
+            <div class="grid-row grid-row--thirds">
+
+                <!-- Win Rate gauge -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="panel-title">Win Rate</span>
+                        <span class="panel-hint">closed deals</span>
+                    </div>
+                    <div class="gauge-wrap">
+                        <svg id="gaugeSvg" viewBox="0 0 200 120" role="img">
+                            <title>Win rate gauge</title>
+                        </svg>
+                        <div class="gauge-stats" id="gaugeStats"></div>
+                    </div>
+                </div>
+
+                <!-- Deal Type breakdown -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="panel-title">Deal Type</span>
+                        <span class="panel-hint">by count</span>
+                    </div>
+                    <div class="hbar-wrap" id="typeHBar"></div>
+                </div>
+
+                <!-- Lead Source of Deals -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="panel-title">Lead Source</span>
+                        <span class="panel-hint">of deals</span>
+                    </div>
+                    <div class="hbar-wrap" id="sourceHBar"></div>
+                </div>
+
+            </div>
+
+            <!-- ROW 4: Top deals table -->
+            <div class="panel panel--full">
+                <div class="panel-header">
+                    <span class="panel-title">Top Deals by Amount</span>
+                    <span class="panel-hint">highest value · all stages</span>
+                </div>
+                <div class="table-wrap">
+                    <table id="dealsTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Deal Name</th>
+                                <th>Account</th>
+                                <th>Stage</th>
+                                <th>Amount</th>
+                                <th>Probability</th>
+                                <th>Close Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dealsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Floating tooltip -->
+    <div id="tooltip" class="tooltip" style="display:none;" role="tooltip"></div>
+
+    <footer class="wg-footer">
+        <p>Data sourced from Zoho CRM Deals module · By Christian Barbosa</p>
+    </footer>
+
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
